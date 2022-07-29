@@ -13,5 +13,4 @@ class Logger:
         handler = logging.StreamHandler(sys.stdout)
         handler.setFormatter(logging.Formatter(self.LOG_FORMAT))
         logger.addHandler(handler)
-        self.logs_file = logs_filename
         self.log = logger
