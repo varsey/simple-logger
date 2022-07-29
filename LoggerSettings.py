@@ -1,5 +1,9 @@
+import datetime
+
+
 class LoggerSettings:
-    def __init__(self, log_filename: str):
+    def __init__(self):
+        log_filename = str(datetime.datetime.now()) + '.log'
         self.LOG_SETTINGS = {
             'version': 1,
             'disable_existing_loggers': False,
